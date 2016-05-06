@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_aboutme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.srikiransistla.homework2.Homework2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView1"
+        android:text="SRIKIRAN SISTLA"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#795548"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView2"
+        android:text="Course: CIS 600:M001"
+        android:layout_below="@+id/txtView1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#004D40"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/imgView"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/me"
+        android:layout_below="@+id/txtView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

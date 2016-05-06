@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/detail_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/detail_poster"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Srikiran"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/detail_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_name"
+        android:layout_toRightOf="@id/detail_poster"
+        android:text="2009" />
+
+    <TextView
+        android:id="@+id/detail_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_year"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/detail_poster"
+        android:text="120 mins"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/detail_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_duration"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/detail_poster"
+        android:textStyle="bold|italic"
+        android:text="Director:" />
+
+    <TextView
+        android:id="@+id/detail_director_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/detail_director"
+        android:layout_below="@id/detail_duration"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/detail_director"
+        android:text="Default"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/detail_cast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/detail_director"
+        android:layout_toRightOf="@id/detail_poster"
+        android:textStyle="bold|italic"
+        android:text="Cast:" />
+
+    <TextView
+        android:id="@+id/detail_cast_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/detail_cast"
+        android:layout_below="@id/detail_director_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/detail_cast"
+        android:text="Default"
+        android:textColor="#000000"/>
+
+    <RatingBar
+        android:id="@+id/detail_rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/detail_rating_num"
+        android:layout_below="@id/detail_poster"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="4.2"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/detail_rating_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_poster"
+        android:layout_toRightOf="@id/detail_rating"
+        android:text="7.9" />
+
+    <TextView
+        android:id="@+id/detail_rating_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_poster"
+        android:textStyle="bold"
+        android:text="Rating:" />
+
+    <TextView
+        android:id="@+id/detail_rating_desc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_rating_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold|italic"
+        android:text="Description:" />
+
+    <TextView
+        android:id="@+id/detail_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/detail_rating_desc_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#000000"
+        android:text="default" />
+</RelativeLayout>

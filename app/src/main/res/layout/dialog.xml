@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialog_heading"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:text="DEVELOPER:"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="40dp"
+        android:textColor="#F44336"/>
+
+    <TextView
+        android:id="@+id/dialog_name"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:text="SRIKIRAN SISTLA"
+        android:textSize="20sp"
+        android:layout_below="@+id/dialog_heading"
+        android:layout_centerInParent="true"
+        android:paddingLeft="20dp"
+        android:textColor="#F44336"/>
+
+    <TextView
+        android:id="@+id/dialog_course"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:text="CIS 600"
+        android:textSize="20sp"
+        android:layout_below="@+id/dialog_name"
+        android:layout_centerInParent="true"
+        android:paddingLeft="60dp"
+        android:textColor="#F44336"/>
+
+    <Button
+        android:id="@+id/dialog_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK!"
+        android:layout_below="@id/dialog_course"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

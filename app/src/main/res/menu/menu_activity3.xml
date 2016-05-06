@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity_task2">
+
+<item
+    android:id="@+id/menu_task3_visible"
+    android:orderInCategory="105"
+    android:title="Show Toolbar"
+    android:icon="@drawable/visibility"
+    app:showAsAction="always" />
+
+</menu>
